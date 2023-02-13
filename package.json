@@ -1,8 +1,8 @@
 {
-	"name": "example-repo",
-	"version": "1.0.0",
-	"description": "Trees rings",
-	"author": "SicdeX",
+	"name": "test",
+	"version": "0.0.1",
+	"description": "",
+	"author": "Qzore",
 	"devDependencies": {
 		"@typescript-eslint/eslint-plugin": "^5.45.0",
 		"@typescript-eslint/parser": "^5.45.0",
