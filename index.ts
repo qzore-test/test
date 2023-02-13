@@ -19,8 +19,9 @@ EventsSDK.on("Draw", () => {
 		Alpha: 100,
 		Radius: 500
 	})
-	let test = EntityManager.GetEntitiesByClass(monkey_king_tree_dance)
-	console.log(test)
+	EntityManager.GetEntitiesByClass(monkey_king_tree_dance).some(abil => {
+		console.log(abil)
+	})
 }})
 
 
