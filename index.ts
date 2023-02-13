@@ -19,7 +19,7 @@ EventsSDK.on("Draw", () => {
 		Alpha: 100,
 		Radius: 500
 	})
-	EntityManager.EntityByIndex(monkey_king_tree_dance).(abil => {
+	EntityManager.EntityByIndex(monkey_king_tree_dance)(abil => {
 		console.log(abil)
 	})
 }})
