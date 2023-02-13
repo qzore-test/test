@@ -19,11 +19,11 @@ EventsSDK.on("Draw", () => {
 		Alpha: 100,
 		Radius: 500
 	})
-	EntityManager.EntityByIndex(1337).some(abil => {
+	EntityManager.GetEntitiesByClass(monkey_king_tree_dance).some(abil => {
 		console.log(abil)
+
 	})
 }})
-
 
 // next step
 // EventsSDK.on("UnitVisibilityChanged", () => {
