@@ -21,7 +21,8 @@ EventsSDK.on("Draw", () => {
 	})
 	EntityManager.GetEntitiesByClass(monkey_king_tree_dance).some(abil => {
 		console.log(abil)
-		
+		console.log('really')
+
 	})
 }})
 // next step
