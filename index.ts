@@ -20,6 +20,6 @@ EventsSDK.on("Draw", () => {
 })
 
 EventsSDK.on("UnitVisibilityChanged", () => {
-console.log('ent')
+console.log(npc)
 })
 
