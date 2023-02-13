@@ -23,11 +23,5 @@
 		"upgrade-pack": "yarn upgrade-interactive --latest",
 		"check-circular": "npx madge --circular index.ts",
 		"lint": "eslint -c .eslintrc.json --ext .ts --fix ."
-	},
-	"license": "GPL-3.0-or-later",
-	"repository": {
-		"type": "git",
-		"directory": "/",
-		"url": "https://github.com/qzore-test/example-repo"
 	}
 }
