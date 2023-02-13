@@ -19,12 +19,11 @@ EventsSDK.on("Draw", () => {
 		Alpha: 100,
 		Radius: 500
 	})
-	EntityManager.GetEntitiesByClass(monkey_king_tree_dance).some(abil => {
-		console.log(abil)
-		console.log('really')
-
-	})
+	let test = EntityManager.GetEntitiesByClass(monkey_king_tree_dance)
+	console.log(test)
 }})
+
+
 // next step
 // EventsSDK.on("UnitVisibilityChanged", () => {
 // console.log("npc")
