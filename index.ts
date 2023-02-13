@@ -19,7 +19,7 @@ EventsSDK.on("Draw", () => {
 	})}
 })
 
-EventsSDK.on("EntityCreated", () => {
-console.log('kek')
+EventsSDK.on("UnitVisibilityChanged", () => {
+console.log('ent')
 })
 
