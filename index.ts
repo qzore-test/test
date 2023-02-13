@@ -18,3 +18,8 @@ EventsSDK.on("Draw", () => {
 		Radius: 500
 	})}
 })
+
+EventsSDK.on("EntityCreated", () => {
+console.log('kek')
+})
+
