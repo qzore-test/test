@@ -1,8 +1,8 @@
 {
-	"name": "test",
+	"name": "example-repo",
 	"version": "1.0.0",
-	"description": "",
-	"author": "",
+	"description": "Trees rings",
+	"author": "SicdeX",
 	"devDependencies": {
 		"@typescript-eslint/eslint-plugin": "^5.45.0",
 		"@typescript-eslint/parser": "^5.45.0",
@@ -23,5 +23,11 @@
 		"upgrade-pack": "yarn upgrade-interactive --latest",
 		"check-circular": "npx madge --circular index.ts",
 		"lint": "eslint -c .eslintrc.json --ext .ts --fix ."
+	},
+	"license": "GPL-3.0-or-later",
+	"repository": {
+		"type": "git",
+		"directory": "/",
+		"url": "https://github.com/qzore-test/example-repo"
 	}
 }

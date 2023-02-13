@@ -14,7 +14,7 @@ EventsSDK.on("Draw", () => {
 	pSDK.DrawBox(LocalPlayer.Handle, LocalPlayer, {
 		Position: LocalPlayer.Hero.VisualPosition,
 		Color: 225,
-		Alpha: 41,
+		Alpha: 100,
 		Radius: 500
 	})}
 })
