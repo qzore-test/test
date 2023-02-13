@@ -19,13 +19,9 @@ EventsSDK.on("Draw", () => {
 		Alpha: 100,
 		Radius: 500
 	})
-	// EntityManager.EntityByIndex(1337).some(abil => {
-	// 	console.log(abil)	
+let abil = EntityManager.EntityByIndex(1337)
+		console.log(abil)	
 
-	// })
-	EntityManager.AllEntities.some(abil1 => {
-		console.log(abil1)
-	})
 }})
 
 // next step
