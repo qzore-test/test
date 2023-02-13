@@ -12,6 +12,7 @@ import {
 const pSDK = new ParticlesX()
 
 EventsSDK.on("Draw", () => {
+	const MyHero = LocalPlayer?.Hero
 	if(LocalPlayer.Hero.IsVisibleForEnemies) {
 	pSDK.DrawBox(LocalPlayer.Handle, LocalPlayer, {
 		Position: LocalPlayer.Hero.VisualPosition,
@@ -19,12 +20,11 @@ EventsSDK.on("Draw", () => {
 		Alpha: 100,
 		Radius: 500
 	})
-	EntityManager.GetEntitiesByClass(monkey_king_tree_dance).some(abil => {
-		console.log(abil)	
-
-	})
-	let abil1 = EntityManager.EntityByIndex(1337)
-		console.log(abil1)	
+	// EntityManager.GetEntitiesByClass(monkey_king_tree_dance).some(abil => {
+	// 	console.log(abil)	
+		const castAbil = MyHero.GetItemByName('item_quelling_blade')
+		console.log(castAbil)
+	// })
 }})
 
 // next step
