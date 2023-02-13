@@ -1,4 +1,4 @@
-import "./Translate"
+// import "./Translate"
 
 import { ParticlesX } from "github.com/octarine-private/immortal-core/index"
 import {
