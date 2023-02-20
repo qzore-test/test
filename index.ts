@@ -46,8 +46,8 @@ import {
 
 
 // const pSDK = new ParticlesX()
-const test = new RendererSDK()
-const vec2 = new Vector2()
+// const test = new RendererSDK()
+// const vec2 = new Vector2()
 EventsSDK.on("Draw", () => {
 	test.Text({
 		text: 'tt',
