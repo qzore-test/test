@@ -9,11 +9,12 @@ EventsSDK.on("Draw", () => {
 
 	// console.log(w2sPosition)
 	
-	const vectorSize = new Vector2()
+	const vectorSize = new Vector2(-1729.15625, -2.09375)
 	const position = w2sPosition.Subtract(vectorSize.DivideScalar(2))
+
 		RendererSDK.Line(
-			position,
-			position
+			vectorSize,
+			vectorSize
 			)
 		
 		// RendererSDK.Text(
