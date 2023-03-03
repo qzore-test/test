@@ -4,6 +4,7 @@ import { ParticlesX } from "github.com/octarine-private/immortal-core/index"
 import {
 	EventsSDK,
 	LocalPlayer,
+	Color
 } from "github.com/octarine-public/wrapper/index"
 
 
@@ -13,6 +14,7 @@ EventsSDK.on("Draw", () => {
 
 	pSDK.DrawFatRing(LocalPlayer.Handle, LocalPlayer, {
 		Position: LocalPlayer.Hero.VisualPosition,
-		Radius: 500
+		Radius: 500,
+		Color: 255	
 	})
 	})
