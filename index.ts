@@ -2,11 +2,8 @@ import { Color, EventsSDK, GUIInfo, RendererSDK, Vector2, Vector3, LocalPlayer }
 let pepe = 'asd'
 const text = `${pepe} TY LOX, a YA NET`
 setInterval(() => {
-	pepe = '200'
-}, 1000);
-setInterval(() => {
-	pepe = '555500'
-}, 3000);
+	console.log('123');
+  }, 1000);
 EventsSDK.on("Draw", () => {
 	const w2sPosition = RendererSDK.WorldToScreen(LocalPlayer.Hero.VisualPosition)
 
