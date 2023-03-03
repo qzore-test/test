@@ -37,16 +37,11 @@ export class BaseDrawable {
 	}
 
 	public OnDraw() {
-		if (!this.Menu.State || !this.IsVisible) {
-			return
-		}
-
 		const w2sPosition = RendererSDK.WorldToScreen(this.Position)
-		if (w2sPosition === undefined) {
-			return
-		}
+		
+		console.log(w2sPosition)
 
-		const vectorSize = new Vector2(GUIInfo.ScaleWidth(50), GUIInfo.ScaleWidth(50))
+		const vectorSize = new Vector2(GUIInfo.ScaleWidth(100), GUIInfo.ScaleWidth(100))
 
 		const position = w2sPosition.Subtract(vectorSize.DivideScalar(2))
 
@@ -55,7 +50,7 @@ export class BaseDrawable {
 				position,
 				0,
 				vectorSize,
-				Color.White.SetA(100)
+				Color.White.SetA(50)
 			)
 			// RendererSDK.OutlinedCircle(
 			// 	position,
