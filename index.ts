@@ -1,9 +1,9 @@
 import { Color, EventsSDK, GUIInfo, RendererSDK, Vector2, Vector3, LocalPlayer } from "github.com/octarine-public/wrapper/index"
 let pepe = 'asd'
 const text = `${pepe} TY LOX, a YA NET`
-setInterval(() => {
-	pepe += 1
-}, 1000);
+// setInterval(() => {
+// 	pepe += 1
+// }, 1000);
 EventsSDK.on("Draw", () => {
 	const w2sPosition = RendererSDK.WorldToScreen(LocalPlayer.Hero.VisualPosition)
 
