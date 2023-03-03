@@ -11,10 +11,15 @@ EventsSDK.on("Draw", () => {
 	
 	const vectorSize = new Vector2()
 	const position = w2sPosition.Subtract(vectorSize.DivideScalar(2))
-		RendererSDK.Text(
-			kek,
+		RendererSDK.Line(
+			position,
 			position
-		)
+			)
+		
+		// RendererSDK.Text(
+		// 	text,
+		// 	position
+		// )
 
 		// RendererSDK.Image(
 		// 	"panorama/images/spellicons/modifier_illusion_png.vtex_c",
