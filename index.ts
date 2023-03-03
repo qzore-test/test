@@ -15,7 +15,7 @@ EventsSDK.on("Draw", () => {
 			position,
 			0,
 			vectorSize,
-			Color.White.SetA(100)
+			Color.White.SetA(10)
 		)
 	})
 		// RendererSDK.OutlinedCircle(
