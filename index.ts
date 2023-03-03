@@ -12,7 +12,6 @@ const pSDK = new ParticlesX()
 EventsSDK.on("Draw", () => {
 
 	pSDK.DrawArrow2D(LocalPlayer.Handle, LocalPlayer, {
-		PositionStart: LocalPlayer.Hero.VisualPosition,
 		Color: Color.Blue
 	})
 	})
