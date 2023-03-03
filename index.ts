@@ -11,7 +11,7 @@ const pSDK = new ParticlesX()
 
 EventsSDK.on("Draw", () => {
 
-	pSDK.DrawBox(LocalPlayer.Handle, LocalPlayer, {
+	pSDK.DrawFatRing(LocalPlayer.Handle, LocalPlayer, {
 		Position: LocalPlayer.Hero.VisualPosition,
 		Radius: 500
 	})
