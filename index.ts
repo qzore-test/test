@@ -11,7 +11,7 @@ import {
 const pSDK = new ParticlesX()
 EventsSDK.on("Draw", () => {
 
-	pSDK.DrawArrow2D(LocalPlayer.Handle, LocalPlayer, {
+	pSDK.DrawArc(LocalPlayer.Handle, LocalPlayer, {
 		Color: Color.Blue
 	})
 	})
