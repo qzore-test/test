@@ -13,7 +13,6 @@ EventsSDK.on("Draw", () => {
 
 	pSDK.DrawArrow2D(LocalPlayer.Handle, LocalPlayer, {
 		PositionStart: LocalPlayer.Hero.VisualPosition,
-		PositionEnd: LocalPlayer.Hero.VisualPosition,
 		Color: Color.Blue
 	})
 	})
