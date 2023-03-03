@@ -12,5 +12,7 @@ const pSDK = new ParticlesX()
 EventsSDK.on("Draw", () => {
 
 	pSDK.DrawBox(LocalPlayer.Handle, LocalPlayer, {
+		Position: LocalPlayer.Hero.VisualPosition
+
 	})
 	})
