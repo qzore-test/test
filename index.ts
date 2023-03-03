@@ -6,10 +6,10 @@ EventsSDK.on("Draw", () => {
 
 	// console.log(w2sPosition)
 
-	const vectorSize = new Vector2(GUIInfo.ScaleWidth(300), GUIInfo.ScaleWidth(300))
+	const vectorSize = new Vector2(LocalPlayer.Hero.VisualPosition.x, LocalPlayer.Hero.VisualPosition.y)
 	const vectorkek = new Vector2(-2488, 1271)
 	const position = w2sPosition.Subtract(vectorSize.DivideScalar(2))
-	const text = 'pepega'
+	const text = 'TY LOX'
 		RendererSDK.Text(
 			text,
 			position
