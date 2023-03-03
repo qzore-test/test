@@ -10,8 +10,6 @@ import {
 
 const pSDK = new ParticlesX()
 EventsSDK.on("Draw", () => {
-
-	pSDK.DrawArc(LocalPlayer.Handle, LocalPlayer, {
-		Color: Color.Blue
-	})
+	const position = w2sPosition.Subtract(vectorSize.DivideScalar(2))
+	console.log(position)
 	})
