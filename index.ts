@@ -11,9 +11,8 @@ import {
 const pSDK = new ParticlesX()
 EventsSDK.on("Draw", () => {
 
-	pSDK.DrawTimerRange(LocalPlayer.Handle, LocalPlayer, {
-		Position: LocalPlayer.Hero.VisualPosition,
-		Radius: 5000,
+	pSDK.DrawArrow2D(LocalPlayer.Handle, LocalPlayer, {
+
 		Color: Color.Blue
 	})
 	})
