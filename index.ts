@@ -11,8 +11,7 @@ EventsSDK.on("Draw", () => {
 	// const position = w2sPosition.Subtract(vectorSize.DivideScalar(2))
 	const text = 'pepega'
 		RendererSDK.Text(
-			text,
-			vectorkek
+			text
 		)
 		// RendererSDK.Image(
 		// 	"panorama/images/spellicons/modifier_illusion_png.vtex_c",
