@@ -2,12 +2,11 @@ import { Color, EventsSDK, GUIInfo, RendererSDK, Vector2, Vector3, LocalPlayer }
 
 
 EventsSDK.on("Draw", () => {
-	console.log('123')
 	const w2sPosition = RendererSDK.WorldToScreen(LocalPlayer.Hero.VisualPosition)
 
-	console.log(w2sPosition)
+	// console.log(w2sPosition)
 
-	const vectorSize = new Vector2(GUIInfo.ScaleWidth(100), GUIInfo.ScaleWidth(100))
+	const vectorSize = new Vector2(GUIInfo.ScaleWidth(1000), GUIInfo.ScaleWidth(1000))
 
 	const position = w2sPosition.Subtract(vectorSize.DivideScalar(2))
 
@@ -16,7 +15,7 @@ EventsSDK.on("Draw", () => {
 			position,
 			0,
 			vectorSize,
-			Color.White.SetA(50)
+			Color.White.SetA(100)
 		)
 	})
 		// RendererSDK.OutlinedCircle(
