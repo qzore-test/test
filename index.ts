@@ -9,12 +9,12 @@ import {
 
 
 const pSDK = new ParticlesX()
-
+const geg = new Color(255, 255, 255)
 EventsSDK.on("Draw", () => {
 
 	pSDK.DrawFatRing(LocalPlayer.Handle, LocalPlayer, {
 		Position: LocalPlayer.Hero.VisualPosition,
 		Radius: 500,
-		Color: 155	
+		Color: geg
 	})
 	})
