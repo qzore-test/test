@@ -10,11 +10,11 @@ import {
 const pSDK = new ParticlesX()
 
 EventsSDK.on("Draw", () => {
-	if(LocalPlayer.Hero.IsVisibleForEnemies) {
+
 	pSDK.DrawBox(LocalPlayer.Handle, LocalPlayer, {
 		Position: LocalPlayer.Hero.VisualPosition,
 		Radius: 500,
 		Color: 225,
 		Alpha: 100
 	})
-	}})
+	})
