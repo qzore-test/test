@@ -7,7 +7,7 @@ EventsSDK.on("Draw", () => {
 	// console.log(w2sPosition)
 
 	const vectorSize = new Vector2(GUIInfo.ScaleWidth(300), GUIInfo.ScaleWidth(300))
-	const vectorkek = new Vector2(-2488.34375, 1271.5,)
+	const vectorkek = new Vector2(-2488.34375, 1271.5)
 	const position = w2sPosition.Subtract(vectorSize.DivideScalar(2))
 
 		RendererSDK.Text(
