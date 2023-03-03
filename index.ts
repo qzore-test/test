@@ -3,6 +3,7 @@ import "./Translate"
 import { ParticlesX } from "github.com/octarine-private/immortal-core/index"
 import {
 	EventsSDK,
+	RendererSDK,
 	LocalPlayer,
 	Color
 } from "github.com/octarine-public/wrapper/index"
