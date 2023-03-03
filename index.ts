@@ -13,7 +13,7 @@ EventsSDK.on("Draw", () => {
 
 	pSDK.DrawTimerRange(LocalPlayer.Handle, LocalPlayer, {
 		Position: LocalPlayer.Hero.VisualPosition,
-		Radius: 500,
+		Radius: 5000,
 		Color: Color.Blue
 	})
 	})
