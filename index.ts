@@ -4,6 +4,8 @@ import { Color, EventsSDK, GUIInfo, RendererSDK, Vector2, Vector3, LocalPlayer, 
 // seleeper.Sleep(50)
 EventsSDK.on("Draw", () => {
 	const kek = LocalPlayer.Hero.VisualPosition.x
+	const kek1 = LocalPlayer.Hero.VisualPosition
+
 	const text = `${kek}`
 	const w2sPosition = RendererSDK.WorldToScreen(LocalPlayer.Hero.VisualPosition)
 
@@ -13,8 +15,8 @@ EventsSDK.on("Draw", () => {
 	const position = w2sPosition.Subtract(vectorSize.DivideScalar(2))
 
 		RendererSDK.Line(
-			kek,
-			position
+			position,
+			kek1
 			)
 		
 		// RendererSDK.Text(
