@@ -15,6 +15,6 @@ EventsSDK.on("Draw", () => {
 	pSDK.DrawFatRing(LocalPlayer.Handle, LocalPlayer, {
 		Position: LocalPlayer.Hero.VisualPosition,
 		Radius: 500,
-		Color: 255	
+		Color: 155	
 	})
 	})
