@@ -3,7 +3,7 @@ import { Color, EventsSDK, GUIInfo, RendererSDK, Vector2, Vector3, LocalPlayer, 
 // const seleeper = new TickSleeper()
 // seleeper.Sleep(50)
 EventsSDK.on("Draw", () => {
-	const kek = LocalPlayer.Hero.VisualPosition
+	const kek = LocalPlayer.Hero.VisualPosition.x
 	const text = `${kek} TY LOX, a YA NET`
 	const w2sPosition = RendererSDK.WorldToScreen(LocalPlayer.Hero.VisualPosition)
 
