@@ -1,8 +1,9 @@
 import { Color, EventsSDK, GUIInfo, RendererSDK, Vector2, Vector3, LocalPlayer, TickSleeper } from "github.com/octarine-public/wrapper/index"
 
 const seleeper = new TickSleeper()
+seleeper.Sleep(50)
 EventsSDK.on("Draw", () => {
-	console.log(seleeper.Sleep(50))
+	console.log(seleeper.lastSleepTickCount)
 	let kek = seleeper.Sleep
 	const text = `${kek} TY LOX, a YA NET`
 	const w2sPosition = RendererSDK.WorldToScreen(LocalPlayer.Hero.VisualPosition)
