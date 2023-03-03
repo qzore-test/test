@@ -8,15 +8,12 @@ EventsSDK.on("Draw", () => {
 
 	const text = `${kek}`
 	const w2sPosition = RendererSDK.WorldToScreen(LocalPlayer.Hero.VisualPosition)
-
-	// console.log(w2sPosition)
 	
 	const vectorSize = new Vector2()
 	const position = w2sPosition.Subtract(vectorSize.DivideScalar(2))
 
 		RendererSDK.Line(
-			position,
-			kek1
+			position
 			)
 		
 		// RendererSDK.Text(
