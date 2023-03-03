@@ -1,14 +1,14 @@
-import { Color, EventsSDK, GUIInfo, RendererSDK, Vector2, Vector3, LocalPlayer } from "github.com/octarine-public/wrapper/index"
-let pepe = 'asd'
-const text = `${pepe} TY LOX, a YA NET`
-setInterval(() => {
-	console.log('123');
-  }, 1000);
+import { Color, EventsSDK, GUIInfo, RendererSDK, Vector2, Vector3, LocalPlayer, TickSleeper } from "github.com/octarine-public/wrapper/index"
+
+const seleeper = new TickSleeper()
+
+const text = `${seleeper.lastSleepTickCount} TY LOX, a YA NET`
+
 EventsSDK.on("Draw", () => {
 	const w2sPosition = RendererSDK.WorldToScreen(LocalPlayer.Hero.VisualPosition)
 
 	// console.log(w2sPosition)
-
+	
 	const vectorSize = new Vector2(GUIInfo.ScaleWidth(0), GUIInfo.ScaleWidth(0))
 	const position = w2sPosition.Subtract(vectorSize.DivideScalar(2))
 		RendererSDK.Text(
