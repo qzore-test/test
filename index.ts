@@ -38,8 +38,9 @@ export class BaseDrawable {
 
 	public OnDraw() {
 		const w2sPosition = RendererSDK.WorldToScreen(this.Position)
-		
-		console.log(w2sPosition)
+
+		console.log(w2sPosition + '123')
+		console.log('123')
 
 		const vectorSize = new Vector2(GUIInfo.ScaleWidth(100), GUIInfo.ScaleWidth(100))
 
