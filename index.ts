@@ -12,7 +12,8 @@ EventsSDK.on("Draw", () => {
 	const vectorSize = new Vector2()
 	const position = w2sPosition.Subtract(vectorSize.DivideScalar(2))
 		RendererSDK.Line(
-			position
+			start: Vector2 = new Vector2(),
+			end = start.Add(this.DefaultShapeSize),
 			)
 		
 		// RendererSDK.Text(
