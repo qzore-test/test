@@ -9,7 +9,7 @@ EventsSDK.on("Draw", () => {
 	const vectorSize = new Vector2(GUIInfo.ScaleWidth(0), GUIInfo.ScaleWidth(0))
 	const vectorkek = new Vector2(-2488, 1271)
 	const position = w2sPosition.Subtract(vectorSize.DivideScalar(2))
-	const text = 'TY LOX'
+	const text = 'TY LOX, a YA NET'
 		RendererSDK.Text(
 			text,
 			position
