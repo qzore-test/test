@@ -1,4 +1,4 @@
-import { Color, EventsSDK, GUIInfo, RendererSDK, Vector2, Vector3, LocalPlayer, EntityManager, AeonDisk, item_blink } from "github.com/octarine-public/wrapper/index"
+import { Color, EventsSDK, GUIInfo, RendererSDK, Vector2, Vector3, LocalPlayer, EntityManager, item_aeon_disk } from "github.com/octarine-public/wrapper/index"
 
 EventsSDK.on("Draw", () => {
 	const kek = LocalPlayer.Hero.VisualPosition
@@ -13,7 +13,7 @@ EventsSDK.on("Draw", () => {
 	const position = w2sPosition.Subtract(vectorSize.DivideScalar(2))
 	const positionEnd = w2sPosition1.Subtract(vectorSize.DivideScalar(2))
 	const MyHero = LocalPlayer?.Hero
-	const kekus = MyHero.GetItemByClass(AeonDisk)
+	const kekus = MyHero.GetItemByClass(item_aeon_disk)
 	console.log(kekus)
 			RendererSDK.Line(
 				position,
