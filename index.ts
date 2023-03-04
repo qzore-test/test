@@ -12,8 +12,7 @@ EventsSDK.on("Draw", () => {
 	const vectorSize = new Vector2()
 	const position = w2sPosition.Subtract(vectorSize.DivideScalar(2))
 	const positionEnd = w2sPosition1.Subtract(vectorSize.DivideScalar(2))
-	const pepix = new EntityManager()
-	pepix.EntityByIndex(12388)
+	console.log(EntityManager.EntityByIndex(12388))
 			RendererSDK.Line(
 				position,
 				positionEnd
