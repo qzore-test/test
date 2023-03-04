@@ -20,14 +20,14 @@ EventsSDK.on("Draw", () => {
 		// 		position,
 		// 		positionEnd
 		// 		)
-		// }
+		// 
 		
 		
-		// RendererSDK.Text(
-		// 	text,
-		// 	position
-		// )
-
+		RendererSDK.Text(
+			text,
+			position
+		)
+	}
 		// RendererSDK.Image(
 		// 	"panorama/images/spellicons/modifier_illusion_png.vtex_c",
 		// 	position,
