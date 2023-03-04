@@ -1,7 +1,5 @@
 import { Color, EventsSDK, GUIInfo, RendererSDK, Vector2, Vector3, LocalPlayer, TickSleeper } from "github.com/octarine-public/wrapper/index"
 
-// const seleeper = new TickSleeper()
-// seleeper.Sleep(50)
 EventsSDK.on("Draw", () => {
 	const kek = LocalPlayer.Hero.VisualPosition
 
@@ -11,10 +9,10 @@ EventsSDK.on("Draw", () => {
 	
 	const vectorSize = new Vector2()
 	const position = w2sPosition.Subtract(vectorSize.DivideScalar(2))
-	const positionEnd = w2sPosition1.Subtract(vectorSize.DivideScalar(2))
+	const positionEnd = new Vector2(-1763.5, 1172.40625)
 
 		RendererSDK.Line(
-			position,
+			kek,
 			positionEnd
 			)
 		
@@ -37,8 +35,4 @@ EventsSDK.on("Draw", () => {
 		// 	this.PlayerColor.SetA(Opacity),
 		// 	GUIInfo.ScaleHeight(Size) / 15
 		// )
-		// return
 
-
-	// RendererSDK.FilledCircle(position, vectorSize, Color.Yellow.SetA(Opacity))
-	// RendererSDK.OutlinedCircle(position, vectorSize, this.PlayerColor.SetA(Opacity), GUIInfo.ScaleHeight(Size) / 15
