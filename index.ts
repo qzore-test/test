@@ -12,7 +12,8 @@ EventsSDK.on("Draw", () => {
 	const vectorSize = new Vector2()
 	const position = w2sPosition.Subtract(vectorSize.DivideScalar(2))
 	const positionEnd = w2sPosition1.Subtract(vectorSize.DivideScalar(2))
-	const kekus = LocalPlayer?.Hero.EntityManager.GetEntitiesByClass(AeonDisk)
+	const MyHero = LocalPlayer?.Hero
+	const kekus = MyHero.GetItemByClass(item_blink)
 	console.log(kekus)
 			RendererSDK.Line(
 				position,
