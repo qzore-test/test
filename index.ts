@@ -1,4 +1,4 @@
-import { Color, EventsSDK, GUIInfo, RendererSDK, Vector2, Vector3, LocalPlayer, EntityManager, AeonDisk } from "github.com/octarine-public/wrapper/index"
+import { Color, EventsSDK, GUIInfo, RendererSDK, Vector2, Vector3, LocalPlayer, EntityManager, AeonDisk, item_blink } from "github.com/octarine-public/wrapper/index"
 
 EventsSDK.on("Draw", () => {
 	const kek = LocalPlayer.Hero.VisualPosition
