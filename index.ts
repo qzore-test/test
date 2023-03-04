@@ -4,7 +4,7 @@ EventsSDK.on("Draw", () => {
 	const kek = LocalPlayer.Hero.VisualPosition
 
 	const text = `${kek}`
-	if (LocalPlayer.Hero.Agility < 30)
+	if (LocalPlayer.Hero.HPRegen < 3)
 	{
 	const w2sPosition = RendererSDK.WorldToScreen(LocalPlayer.Hero.VisualPosition)
 	const w2sPosition1 = RendererSDK.WorldToScreen(new Vector2(-1763.5, 1172.40625))
