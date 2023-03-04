@@ -14,7 +14,7 @@ EventsSDK.on("Draw", () => {
 		const MyHero = LocalPlayer?.Hero
 		const kekus = MyHero.GetItemByClass(item_aeon_disk)
 		const currentHp = LocalPlayer?.Hero.HP
-		const matHp = currentHp - (currentHp / 100 * 70)
+		// const matHp = currentHp - (currentHp / 100 * 70)
 		const text = `${matHp}`
 		// 	RendererSDK.Line(
 		// 		position,
