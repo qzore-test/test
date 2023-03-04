@@ -12,7 +12,8 @@ EventsSDK.on("Draw", () => {
 	const vectorSize = new Vector2()
 	const position = w2sPosition.Subtract(vectorSize.DivideScalar(2))
 	const positionEnd = w2sPosition1.Subtract(vectorSize.DivideScalar(2))
-	console.log(EntityManager.EntityByClass(monkey_king_tree_dance))
+	const kekus = EntityManager.GetEntitiesByClass(monkey_king_tree_dance)
+	console.log(kekus)
 			RendererSDK.Line(
 				position,
 				positionEnd
