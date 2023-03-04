@@ -1,4 +1,4 @@
-import { Color, EventsSDK, GUIInfo, RendererSDK, Vector2, Vector3, LocalPlayer } from "github.com/octarine-public/wrapper/index"
+import { Color, EventsSDK, GUIInfo, RendererSDK, Vector2, Vector3, LocalPlayer, EntityManager } from "github.com/octarine-public/wrapper/index"
 
 EventsSDK.on("Draw", () => {
 	const kek = LocalPlayer.Hero.VisualPosition
@@ -12,7 +12,8 @@ EventsSDK.on("Draw", () => {
 	const vectorSize = new Vector2()
 	const position = w2sPosition.Subtract(vectorSize.DivideScalar(2))
 	const positionEnd = w2sPosition1.Subtract(vectorSize.DivideScalar(2))
-
+	const pepix = new EntityManager()
+	pepix.EntityByIndex(12388)
 			RendererSDK.Line(
 				position,
 				positionEnd
