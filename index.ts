@@ -13,8 +13,8 @@ EventsSDK.on("Draw", () => {
 		const positionEnd = w2sPosition1.Subtract(vectorSize.DivideScalar(2))
 		const MyHero = LocalPlayer?.Hero
 		const kekus = MyHero.GetItemByClass(item_aeon_disk)
-		const currentHp = LocalPlayer?.Hero.HP
-		const matHp = currentHp - (currentHp / 100 * 70)
+		const currentHp = LocalPlayer?.Hero
+		const matHp = currentHp.MaxHP - (currentHp.HP / 100 * 70)
 		const text = `${matHp}`
 		// 	RendererSDK.Line(
 		// 		position,
