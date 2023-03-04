@@ -10,11 +10,13 @@ EventsSDK.on("Draw", () => {
 	const vectorSize = new Vector2()
 	const position = w2sPosition.Subtract(vectorSize.DivideScalar(2))
 	const positionEnd = w2sPosition1.Subtract(vectorSize.DivideScalar(2))
-		if(LocalPlayer.Hero.Agility < 30)
-		RendererSDK.Line(
+		if(LocalPlayer.Hero.Agility < 30) 
+		{		
+			RendererSDK.Line(
 			position,
 			positionEnd
 			)
+		}
 		
 		// RendererSDK.Text(
 		// 	text,
